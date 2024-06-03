@@ -3,41 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apple Varieties Portfolio</title>
-    <style>
-        /* Basic CSS styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-        .apple {
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            padding: 20px;
-        }
-        .apple img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-        }
-    </style>
+    <title>Apple Product Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Apple Varieties Portfolio</h1>
-    </header>
-    <div class="container">
-        <div
+    <div class="main-layout">
+        <header>
+            <h1>Apple Varieties</h1>
+        </header>
+        <section class="product-details">
+            <div class="photo-container">
+                <div class="photo-main">
+                    <img src="main_photo.jpg" alt="Main Photo">
+                </div>
+                <div class="photo-album">
+                    <ul>
+                        <li><img src="photo1.jpg" alt="Photo 1"></li>
+                        <li><img src="photo2.jpg" alt="Photo 2"></li>
+                        <li><img src="photo3.jpg" alt="Photo 3"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="details">
+                <div class="price">$7.93</div>
+                <div class="variants">
+                    <h2>Varieties</h2>
+                    <div class="variant">
+                        <span class="color">Green:</span>
+                        <img src="green_apple.jpg" alt="Green Apple">
+                    </div>
+                    <div class="variant">
+                        <span class="color">Yellow:</span>
+                        <img src="yellow_apple.jpg" alt="Yellow Apple">
+                    </div>
+                    <div class="variant">
+                        <span class="color">Orange:</span>
+                        <img src="orange_apple.jpg" alt="Orange Apple">
+                    </div>
+                    <div class="variant">
+                        <span class="color">Red:</span>
+                        <img src="red_apple.jpg" alt="Red Apple">
+                    </div>
+                </div>
+                <div class="description">
+                    <h2>BENEFITS</h2>
+                    <p>Our apples are handpicked from the finest orchards, ensuring freshness and quality. They are rich in vitamins and antioxidants, promoting good health.</p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <button class="add-to-cart">ADD TO CART</button>
+        </footer>
+    </div>
+</body>
+</html>
